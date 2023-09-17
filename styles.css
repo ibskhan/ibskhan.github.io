@@ -1,0 +1,153 @@
+* {
+    transition: all 500ms ease;
+    cursor: crosshair;
+  }
+
+html body {
+    font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue',
+          sans-serif;
+    color: #121314;
+}
+
+body {
+    padding:0;
+}
+
+main {
+    margin: auto;
+    padding: 10em 0 15em 0;
+    max-width: 60%;
+  }
+
+#intro {
+    font-size: calc(2rem + 0.33vw);
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: type 4s steps(60, end);
+}
+
+.cursor {
+    animation: blink 1s infinite;
+    color: #98b4d4;
+}
+
+.web-dev {
+    background: linear-gradient(to right, #7facdf, #7fdfa9);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: transparent;
+}
+
+p {
+    font-size: 1.4em;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+#outside {
+    padding-bottom: 0.5rem;
+}
+
+
+.resume-button {
+    display: grid;
+    margin: auto;
+    padding: .5rem;
+    border-radius: 1em;
+    border: 1px solid #121314;
+    width: 10rem;
+    font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+    font-size: 1.3em;
+    font-weight: 300;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.resume-button:hover {
+    background-image: linear-gradient(to left, #7fdfa9, #7facdf);
+    width: 12rem;
+    color: #fff;
+}
+
+.resume-link {
+    text-decoration: none;
+}
+
+.fa {
+    padding: 8px;
+    font-size: 1.2rem;
+    width: 1.4rem;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #121314;
+    border-radius: 50%;
+    opacity: 85%;
+    transition:all .25s ease;
+}
+
+.fa:hover {
+	padding: 14px 14px 14px 14px;
+    width: 1.45rem;
+	cursor: pointer;
+}
+
+.fa-envelope {
+    color: #7fbfdf;
+}
+
+.fa-linkedin {
+    color: rgb(127, 201, 223);
+}
+
+.fa-instagram {
+    color: #7fdfd6;
+}
+
+.fa-github {
+    color: #7fdfa9;
+}
+
+.sm-link {
+    padding-top: 1.5rem;
+    gap: 2rem;
+    display:flex;
+    justify-content:center;
+}
+
+.color-change {
+    animation: hue-shift 4s infinite alternate;
+}
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes hue-shift {
+    from {
+        filter: hue-rotate(0);
+    } to {
+        filter: hue-rotate(90deg);
+    }
+}
+
+
+@media (max-width: 768px) {
+    main {
+      padding: 20px;
+      max-width: 100%;
+    }
+    .intro {
+      font-size: 25px;
+    }
+}
+
+@media (max-width: 300px) {
+    .sm-link {
+        display:grid;
+    }
+}
