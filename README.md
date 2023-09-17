@@ -6,4 +6,4 @@ The website will be under constant updates, but I hope you enjoy exploring my po
 * About Me: Learn more about my background, education, and career goals.  
 * Skills: See a list of my technical and professional skills, and view examples of my work in these areas.
 * Contact: Get in touch with me through email or social media.
-* Made by Tyson Cheung!
+* Made by Ibrahim Khan!
